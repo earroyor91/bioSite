@@ -1,23 +1,9 @@
-/* Index CSS */
+/*General CSS */
 
 body{
     margin: 0;
     padding: 0;
     background-color: #FFFDD0;
-}
-
-#landing_container{
-    margin-left: 180px;
-}
-
-header{
-    text-align: center;
-    background-color: #6E7B3A;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 50px;
-    margin-left: 80px;
-    font-family: "Lucida Handwriting", cursive;
 }
 
 h1{
@@ -27,14 +13,12 @@ h1{
 }
 
 #sidebar{
-    height: 100%;
-    width: 160px;
     position: fixed;
-    z-index: 1;
+    height: 100%;
+    width: 120px;
     top: 0;
     left: 0;
     background-color: #6A2E35;
-    overflow-x: hidden;
     padding-top: 20px;
 }
 
@@ -44,6 +28,10 @@ h1{
     font-size: 25px;
     color: #FFFDD0;
     display: block;
+}
+
+#sidebar a:hover{
+    text-decoration: underline;
 }
 
 footer{
@@ -62,36 +50,138 @@ footer a:hover{
     text-decoration: underline;
 }
 
+/* Index CSS */
+
+#landing_header{
+    text-align: center;
+    background-color: #6E7B3A;
+    margin-left: 58px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+#landing_container{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
 .landing_image_gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 5%;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.landing_gallery_item{
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.accomplishments{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.landing_fig figcaption{
+    font-style: italic;
 }
 
 /*  About CSS */
 
-#about_container{
-    margin-left: 180px;
-    padding-left: 10px;
+#about_header{
+    text-align: center;
+    background-color: #6E7B3A;
+    margin-left: 55px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Lucida Handwriting", cursive;
 }
 
-#about_bio_title{
+#portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    padding-top: 20px;
+}
+
+#portrait_image{
+    width: 450px;
+    height: 600px;
+    margin-left: 0px;
+}
+
+#portrait figcaption{
+    font-style: italic;
     text-align: center;
 }
 
-#about_interview_title{
+#about_bio_title, #about_interview_title{
     text-align: center;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+
+#about_bio, #about_interview{
+    margin-left: 120px;
+    padding-left: 20px;
+}
+
+.answers{
+    line-height: 1.6;
+}
+
+#about_footer{
+    margin-top: 5%;
 }
 
 /* Hobbies CSS */
 
+#hobbies_header{
+    text-align: center;
+    background-color: #6E7B3A;
+    margin-left: 58px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Lucida Handwriting", cursive;
+}
+
 #hobbies_container{
-    margin-left: 180px;
-    padding-left: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .hobbies_image_gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 5%;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hobbies_gallery_item{
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.hobbies_image{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+}
+
+#hobbies_footer{
+    margin-top: 10%;
+}
+
+.hobbies_figcaption{
+    text-align: center;
+    font-style: italic;
 }
