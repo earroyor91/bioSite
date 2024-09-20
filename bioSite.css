@@ -3,13 +3,17 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #FFFDD0;
+    background-color: #F5F5DC;
 }
 
 h1{
     font-weight: 600;
     font-size: 32px;
-    color: #FFFDD0;
+    color: #6A2E35;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
 }
 
 #sidebar{
@@ -26,28 +30,45 @@ h1{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #FFFDD0;
+    color: #FFFFFF;
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #sidebar a:hover{
     text-decoration: underline;
+    color: #008080;
 }
 
 footer{
-    width: 100%;
+    width: calc(100% - 120px);
+    background-color: #FF7518;
+    position: fixed;
+    left: 120px;
+    bottom: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer p{
+    font-size: 18px;
+    margin: 0;
+    color: #FFFFFF;
 }
 
 footer a{  
     text-decoration: none;
     font-weight: 400;
-    float: right;
-    padding-right: 10px;
+    padding-right: 20px;
     font-style: italic;
+    color: #FFFFFF;
 }
 
 footer a:hover{
     text-decoration: underline;
+    color: #008080;
 }
 
 /* Index CSS */
@@ -89,9 +110,14 @@ footer a:hover{
 
 .landing_fig figcaption{
     font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*  About CSS */
+
+#about_body{
+    padding-bottom: 80px;
+}
 
 #about_header{
     text-align: center;
@@ -119,12 +145,18 @@ footer a:hover{
 #portrait figcaption{
     font-style: italic;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #about_bio_title, #about_interview_title{
     text-align: center;
     margin-bottom: 20px;
     margin-left: 120px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#about_bio{
+    font-family: "Montserrat", sans-serif;
 }
 
 #about_bio, #about_interview{
@@ -132,12 +164,13 @@ footer a:hover{
     padding-left: 20px;
 }
 
-.answers{
-    line-height: 1.6;
+.Questions{
+    font-family: "Montserrat", sans-serif;
 }
 
-#about_footer{
-    margin-top: 5%;
+.Answers{
+    line-height: 1.6;
+    font-family: "Lora", serif;
 }
 
 /* Hobbies CSS */
@@ -177,11 +210,8 @@ footer a:hover{
     object-fit: cover;
 }
 
-#hobbies_footer{
-    margin-top: 10%;
-}
-
 .hobbies_figcaption{
     text-align: center;
     font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
