@@ -113,6 +113,23 @@ footer a:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.ruin_link {
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+    color: #0000EE;
+}
+
+.ruin_link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.ruin_link:visited {
+    color: #800080;
+    text-decoration: none;
+}
+
 /*  About CSS */
 
 #about_body{
@@ -212,6 +229,5 @@ footer a:hover{
 
 .hobbies_figcaption{
     text-align: center;
-    font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
